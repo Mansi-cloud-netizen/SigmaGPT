@@ -1,0 +1,156 @@
+.chatWindow{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between ;
+    align-items: center;
+    text-align:center;
+}
+
+
+.navbar{
+    width: 100%;
+    background-color: #212121;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+.chatInput{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.userIconDiv{
+    height:35px;
+    width:35px;
+    border-radius:50%;
+    background-color:#339cff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+}
+.userIconDiv:hover{
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+.auth {
+    display:flex;
+    gap:2px;
+    flex:column;
+    margin-left:800px;
+}
+
+.signup, .login {
+    border:2px solid#323232;
+    color: white;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.login{
+    background-color: #fff!important;
+    color:#000!important;
+}
+
+.login:hover{
+    opacity:0.9;
+}
+.navbar p{
+    font-size:20px;
+    font-weight:600;
+    color:#fff;
+    cursor:pointer;
+}
+.navbar p i{
+    margin-left:8px;
+    font-size:14px;
+}
+
+.userInput {
+    width:90%;
+    position: relative;
+    max-width:700px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+input{
+    width:100%;
+    border:none;
+    outline:none;
+    background-color: rgba(255,255,255,0.05);
+    padding:20px;
+    font-size:0.8rem;
+    border-radius:14px;
+}
+
+#submit{
+    cursor:pointer;
+    height:35px;
+    width:35px;
+    font-size:20px;
+    position:absolute;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    right:15px;
+}
+
+
+#submit i :hover{
+    color:#fff;
+}
+.info{
+    font-size:0.8rem;
+    padding:0.5rem;
+    color:#b4b4b4;
+}
+
+.dropDown{
+    position:absolute;
+    top:60px;
+    right:20px;
+    background-color:#212121;
+    border-radius:10px;
+    box-shadow:0 4px 8px rgba(0,0,0,0.2);
+    z-index:1000;
+    width:150px;
+    display:flex;
+    flex-direction:column;
+}
+
+.dropDownItems{
+    padding:10px;
+    color:#b4b4b4;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    border-radius: 10px ;
+}
+
+.dropDownItems:hover{
+    background-color:rgba(255,255,255,0.05);
+}
+
+.dropDownItems i{
+    margin-right:10px;
+}
+
+.chatWindow::-webkit-scrollbar {
+    width: 8px;
+}

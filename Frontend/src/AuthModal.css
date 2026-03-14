@@ -1,0 +1,81 @@
+.authOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.authModal {
+    background: #1e1e1e;
+    color: white;
+    width: 380px;
+    padding: 2rem;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+}
+
+.closeBtn {
+    position: absolute;
+    right: 14px;
+    top: 10px;
+    background: none;
+    border: none;
+    color: #aaa;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.authBtn {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.google {
+    background: #fff;
+    color: #000;
+}
+
+.facebook {
+    background: #1877f2;
+    color: #fff;
+}
+
+.email {
+    background: #10a37f;
+    color: #fff;
+}
+
+.authModal input {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background: #2c2c2c;
+    color: white;
+}
+
+.divider {
+    text-align: center;
+    color: #777;
+}
+
+.terms {
+    font-size: 0.75rem;
+    color: #888;
+    text-align: center;
+}
