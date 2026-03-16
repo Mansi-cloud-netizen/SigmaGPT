@@ -1,5 +1,5 @@
 import express from 'express';
-import cors from 'cors';    
+import cors from 'cors';
 import 'dotenv/config';
 import mongoose from 'mongoose';
 import chatRoutes from './routes/chat.js';
@@ -9,10 +9,7 @@ import passport from './config/passport.js';
 const app = express();
 const port = process.env.PORT || 8080;
 
-app.use(cors({
-  origin: '*', // For production, replace '*' with the actual frontend URL if needed
-  credentials: true
-}));
+app.use(cors());
 app.use(express.json());
 app.use(passport.initialize());
 
