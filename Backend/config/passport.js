@@ -33,7 +33,7 @@ passport.use(new LocalStrategy(
 passport.use(new GoogleStrategy({
     clientID: process.env.GOOGLE_CLIENT_ID || 'dummy_client_id',
     clientSecret: process.env.GOOGLE_CLIENT_SECRET || 'dummy_client_secret',
-    callbackURL: "/api/auth/google/callback"
+    callbackURL: "https://sigmagpt-backend-n35v.onrender.com/api/auth/google/callback"
   },
   async (accessToken, refreshToken, profile, done) => {
     try {
